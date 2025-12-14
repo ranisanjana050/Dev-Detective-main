@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+    padding-bottom: 10px;
   }
   
   #app {
@@ -49,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 80px;
   }
   .dev{
     display: flex;
@@ -407,3 +409,81 @@
     }
   }
   
+  /* Mobile-first styles */
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .searchbar-container {
+      padding: 8px;
+      background-size: 16px;
+      background-position-x: 16px;
+    }
+  
+    #input {
+      font-size: 12px;
+      padding-left: 40px;
+    }
+  
+    .btn-search {
+      padding: 10px 14px;
+      font-size: 12px;
+    }
+  
+    .profile-container {
+      padding: 20px;
+    }
+  
+    .profile-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    #avatar {
+      width: 60px;
+    }
+  
+    .profile-name h2 {
+      font-size: 14px;
+    }
+  
+    #user {
+      font-size: 12px;
+    }
+  
+    .profile-stats-wrapper {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .profile-info {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    /* Adjustments for upper logo and moon/sun icons */
+    .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #btn-mode {
+      width: auto;
+      justify-content: center;
+    }
+
+    #btn-mode img {
+      max-width: 20px;
+      height: auto;
+    }
+  }
